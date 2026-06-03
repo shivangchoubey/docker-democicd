@@ -19,7 +19,7 @@ jobs:
                docker build -t ${{secrets.DOCKERHUB_USERNAME}}/docker-demo:latest .
             - name: Docker Push image
               run: |
-               docker push ${{secrets.DOCKERHUBUSERNAME}}/docker-demo:latest .
-               
+               docker push ${{secrets.DOCKERHUB_USERNAME}}/docker-demo:latest .
+
 
 
